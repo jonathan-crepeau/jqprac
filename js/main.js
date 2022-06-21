@@ -24,6 +24,16 @@ $("#box2 strong").css("color", "green");
 // a) Slide toggle #box4
 // b) Fade out #box1 slowly
 
+$("#box3 p").on('click', function() {
+  $("#box4").slideToggle();
+  $("#box1").fadeOut();
+});
+
 // 1. When the h2 is clicked on
 // a) Slide up the h2
 // b) Add the snazzy class to the h1
+
+$("h2").on('click', function() {
+  $("h2").slideUp();
+  $("h1").addClass("snazzy");
+})
